@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simple-Game-Project</title>
 
+    <!-- favicon setup  -->
+    <link
+      class=""
+      rel="shortcut icon"
+      href="images/game.png"
+      type="image/x-icon"
+    />
+
     <!-- tailwind and daisy ui setup -->
 
     <link
@@ -24,18 +32,71 @@
       class="bg-[#010313] min-h-screen bg-[url('/images/background.png')] bg-no-repeat bg-center"
     >
       <!-- frist section start -->
-      <div class="flex flex-col items-center pt-48">
-        <h1 class="anton-regular text-5xl text-white text-center">
-          ALPHABET CLASH
-        </h1>
+      <section class="hidden">
+        <div class="flex flex-col items-center pt-48">
+          <h1 class="anton-regular text-5xl text-white text-center">
+            ALPHABET CLASH PRO
+          </h1>
 
-        <button class="btn btn-neutral mt-5 anton-regular text-2xl">
-          PLAY NOW
-        </button>
-      </div>
+          <button class="btn btn-neutral mt-5 anton-regular text-2xl">
+            PLAY NOW
+          </button>
+        </div>
+      </section>
 
       <!-- second section start -->
-      <div></div>
+      <section>
+        <div>
+          <div
+            class="artboard h-52 w-3/4 mb-5 mx-auto mt-14 bg-[#FFFFFFB3] artboard-horizontal phone-6 border-8 border-black-50 rounded-xl"
+          >
+            1024×320
+          </div>
+        </div>
+        <div class="mx-auto">
+          <div class="my-1 flex w-full justify-center gap-1">
+            <kbd class="kbd">q</kbd>
+            <kbd class="kbd">w</kbd>
+            <kbd class="kbd">e</kbd>
+            <kbd class="kbd">r</kbd>
+            <kbd class="kbd">t</kbd>
+            <kbd class="kbd">y</kbd>
+            <kbd class="kbd">u</kbd>
+            <kbd class="kbd">i</kbd>
+            <kbd class="kbd">o</kbd>
+            <kbd class="kbd">p</kbd>
+          </div>
+          <div class="my-1 flex w-full justify-center gap-1">
+            <kbd class="kbd">a</kbd>
+            <kbd class="kbd">s</kbd>
+            <kbd class="kbd">d</kbd>
+            <kbd class="kbd">f</kbd>
+            <kbd class="kbd">g</kbd>
+            <kbd class="kbd">h</kbd>
+            <kbd class="kbd">j</kbd>
+            <kbd class="kbd">k</kbd>
+            <kbd class="kbd">l</kbd>
+          </div>
+          <div class="my-1 flex w-full justify-center gap-1">
+            <kbd class="kbd">z</kbd>
+            <kbd class="kbd">x</kbd>
+            <kbd class="kbd">c</kbd>
+            <kbd class="kbd">v</kbd>
+            <kbd class="kbd">b</kbd>
+            <kbd class="kbd">n</kbd>
+            <kbd class="kbd">m</kbd>
+            <kbd class="kbd">/</kbd>
+          </div>
+        </div>
+        <div class="w-1/2 flex flex-row justify-between mx-auto mt-20">
+          <div class="bg-fuchsia-700 rounded-2xl ml-2">
+            <h1 class="text-white font-mono p-2">Life 1</h1>
+          </div>
+          <div class="bg-fuchsia-700 rounded-2xl mr-2">
+            <h1 class="text-white font-mono p-2">Score 1</h1>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
