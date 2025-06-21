@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en  ">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -32,60 +32,63 @@
       class="bg-[#010313] min-h-screen bg-[url('/images/background.png')] bg-no-repeat bg-center"
     >
       <!-- frist section start -->
-      <section class="hidden">
+      <section id="home" class="">
         <div class="flex flex-col items-center pt-48">
           <h1 class="anton-regular text-5xl text-white text-center">
             ALPHABET CLASH PRO
           </h1>
 
-          <button class="btn btn-neutral mt-5 anton-regular text-2xl">
+          <button
+            onclick="play()"
+            class="btn btn-neutral mt-5 anton-regular text-2xl"
+          >
             PLAY NOW
           </button>
         </div>
       </section>
 
       <!-- second section start -->
-      <section class="p-16 hidden">
+      <section id="playground" class="p-16 hidden">
         <div>
           <div
-            class="artboard h-52 w-3/4 mb-5 mx-auto bg-[#FFFFFFB3] artboard-horizontal phone-6 border-8 border-black-50 rounded-xl"
+            class="flex justify-center items-center artboard h-52 w-3/4 mb-5 mx-auto bg-[#FFFFFFB3] artboard-horizontal phone-6 border-8 border-black-50 rounded-xl"
           >
-            1024×320
+            <p id="random-alphabet" class="text-6xl font-bold uppercase">Y</p>
           </div>
         </div>
         <div class="mx-auto">
           <div class="my-1 flex w-full justify-center gap-1">
-            <kbd class="kbd">q</kbd>
-            <kbd class="kbd">w</kbd>
-            <kbd class="kbd">e</kbd>
-            <kbd class="kbd">r</kbd>
-            <kbd class="kbd">t</kbd>
-            <kbd class="kbd">y</kbd>
-            <kbd class="kbd">u</kbd>
-            <kbd class="kbd">i</kbd>
-            <kbd class="kbd">o</kbd>
-            <kbd class="kbd">p</kbd>
+            <kbd id="q" class="kbd">q</kbd>
+            <kbd id="w" class="kbd">w</kbd>
+            <kbd id="e" class="kbd">e</kbd>
+            <kbd id="r" class="kbd">r</kbd>
+            <kbd id="t" class="kbd">t</kbd>
+            <kbd id="y" class="kbd">y</kbd>
+            <kbd id="u" class="kbd">u</kbd>
+            <kbd id="i" class="kbd">i</kbd>
+            <kbd id="o" class="kbd">o</kbd>
+            <kbd id="p" class="kbd">p</kbd>
           </div>
           <div class="my-1 flex w-full justify-center gap-1">
-            <kbd class="kbd">a</kbd>
-            <kbd class="kbd">s</kbd>
-            <kbd class="kbd">d</kbd>
-            <kbd class="kbd">f</kbd>
-            <kbd class="kbd">g</kbd>
-            <kbd class="kbd">h</kbd>
-            <kbd class="kbd">j</kbd>
-            <kbd class="kbd">k</kbd>
-            <kbd class="kbd">l</kbd>
+            <kbd id="a" class="kbd">a</kbd>
+            <kbd id="s" class="kbd">s</kbd>
+            <kbd id="d" class="kbd">d</kbd>
+            <kbd id="f" class="kbd">f</kbd>
+            <kbd id="g" class="kbd">g</kbd>
+            <kbd id="h" class="kbd">h</kbd>
+            <kbd id="j" class="kbd">j</kbd>
+            <kbd id="k" class="kbd">k</kbd>
+            <kbd id="l" class="kbd">l</kbd>
           </div>
           <div class="my-1 flex w-full justify-center gap-1">
-            <kbd class="kbd">z</kbd>
-            <kbd class="kbd">x</kbd>
-            <kbd class="kbd">c</kbd>
-            <kbd class="kbd">v</kbd>
-            <kbd class="kbd">b</kbd>
-            <kbd class="kbd">n</kbd>
-            <kbd class="kbd">m</kbd>
-            <kbd class="kbd">/</kbd>
+            <kbd id="z" class="kbd">z</kbd>
+            <kbd id="x" class="kbd">x</kbd>
+            <kbd id="c" class="kbd">c</kbd>
+            <kbd id="v" class="kbd">v</kbd>
+            <kbd id="b" class="kbd">b</kbd>
+            <kbd id="n" class="kbd">n</kbd>
+            <kbd id="m" class="kbd">m</kbd>
+            <kbd id="/" class="kbd">/</kbd>
           </div>
         </div>
         <div class="w-1/2 flex flex-row justify-between mx-auto mt-20">
@@ -100,7 +103,7 @@
       <!-- second section end -->
 
       <!-- third section start -->
-      <section class="min-h-screen flex justify-center items-center">
+      <section class="min-h-screen flex justify-center items-center hidden">
         <div class="text-white text-center">
           <h1 class="text-5xl font-semibold anton-regular">
             Score : <span>14</span>
@@ -112,5 +115,8 @@
         </div>
       </section>
     </main>
+
+    <script src="script/game.js"></script>
+    <script src="script/utility.js"></script>
   </body>
 </html>
