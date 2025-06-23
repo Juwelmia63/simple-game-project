@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simple-Game-Project</title>
+    <title>Baby-Game-Project</title>
 
     <!-- favicon setup  -->
     <link
@@ -35,7 +35,7 @@
       <section id="home" class="">
         <div class="flex flex-col items-center pt-48">
           <h1 class="anton-regular text-5xl text-white text-center">
-            ALPHABET CLASH PRO
+            Baby CLASH PRO
           </h1>
 
           <button
@@ -93,22 +93,32 @@
         </div>
         <div class="w-1/2 flex flex-row justify-between mx-auto mt-20">
           <div class="bg-fuchsia-700 rounded-2xl ml-2">
-            <h1 class="text-white font-mono p-2">Life 1</h1>
+            <h1 class="text-white font-mono p-2">
+              Life <span id="currentLife">10</span>
+            </h1>
           </div>
           <div class="bg-fuchsia-700 rounded-2xl mr-2">
-            <h1 class="text-white font-mono p-2">Score 1</h1>
+            <h1 class="text-white font-mono p-2">
+              Score <span id="presentScore">1</span>
+            </h1>
           </div>
         </div>
       </section>
       <!-- second section end -->
 
       <!-- third section start -->
-      <section class="min-h-screen flex justify-center items-center hidden">
+      <section
+        id="finalScore"
+        class="min-h-screen flex justify-center items-center hidden"
+      >
         <div class="text-white text-center">
           <h1 class="text-5xl font-semibold anton-regular">
             Score : <span>14</span>
           </h1>
-          <button class="btn btn-ghost anton-regular text-xl">
+          <button
+            onclick="playAgain()"
+            class="btn btn-ghost anton-regular text-xl"
+          >
             Play Again
           </button>
           <p class="anton-regular">Practice will make you pro</p>

@@ -24,9 +24,18 @@ function handlekeyup(event){
     // console.log('dorkar amar alphabet', finalDorkar);
 
 
-    if(pressesKey == finalDorkar){
+    if(pressesKey === finalDorkar){
         
+        const presentScore = document.getElementById('presentScore');
+        const scoreText = presentScore.innerText;
+        const justScore =  parseInt(scoreText);
 
+
+        const newScore = justScore +1;
+
+        presentScore.innerText=newScore;
+       
+        console.log(justScore);
         // console.log('everything ok');
         continueGame();
         // setBackgroundColor(finalDorkar)
@@ -34,6 +43,20 @@ function handlekeyup(event){
     }
     else{
         console.log('nothing is ok');
+
+
+        const currentLife = document.getElementById('currentLife');
+        const currentLifeText = currentLife.innerText;
+        const realLife = parseInt(currentLifeText);
+
+        const newLife = realLife-1;
+
+        currentLife.innerText=newLife;
+
+        if (newLife==0){
+            gameOver();
+        }
+
     }
   
 }
@@ -47,7 +70,25 @@ document.addEventListener('keyup', handlekeyup )
 function play (){
    hideElement('home')
    showElement('playground')
+   
+
+
+    
+
+
    continueGame()
    
 }
 
+
+function gameOver (){
+    hideElement('playground');
+    showElement('finalScore')
+
+}
+
+
+function playAgain (){
+    hideElement('finalScore')
+    showElement('home')
+}
