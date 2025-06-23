@@ -14,6 +14,11 @@ function setBackgroundColor (elementId){
     currentElement.classList.add('bg-orange-700')
     currentElement.classList.add('text-white')
 }
+function removeBackgroundColor (elementId){
+    const currentElement = document.getElementById(elementId);
+    currentElement.classList.remove('bg-orange-700')
+    currentElement.classList.remove('text-white')
+}
 
 
 
